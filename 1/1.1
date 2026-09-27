@@ -1,0 +1,24 @@
+surname = input("Введите фамилию: ")
+name = input("Введите имя: ")
+group = input("Введите группу: ")
+city = input("Введите город: ")
+age = int(input("Введите возраст (от 1 до 120): "))
+subject = input("Введите любимый предмет: ")
+hours = float(input("Введите количество часов подготовки в неделю: "))
+
+fname = name + " " + surname
+age4years = age + 4
+hours4weeks = hours * 4
+hoursday = hours / 7
+
+print()
+print("==== Карточка студента ====")
+print("Полное имя:", fname)
+print("Группа:", group)
+print("Город:", city)
+print("Возраст:", age)
+print("Через 4 года вам будет:", age4years)
+print("Любимый предмет:", subject)
+print(f"Время подготовки за 4 недели: {hours4weeks:.2f} ч.")
+print(f"Среднее время в день: {hoursday:.2f} ч.")
+
